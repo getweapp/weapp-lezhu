@@ -1,0 +1,45 @@
+<view class="container">
+<map longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" covers="{{covers}}" style="width: 375px; height: 300px;"></map>
+    <view class="item">
+        <view class="itemLeft fl">
+            <image src="https://wechatapp.zhhhorizon.net/intl-console-web/pic/{{nickName}}.JPG" class="personImg fl"></image>
+            <text class="fl personName">{{nickName}}</text>
+
+        </view>
+        <view class="itemRight fr">
+            <text class="fr ffscore">悬赏：{{payScore}}积分</text>
+        </view>
+    </view>
+    <view class="description">
+        <view>
+            <text>{{title}}</text>
+        </view>
+         <view class="desDetail">
+            <text>{{content}}</text>
+        </view>
+    </view>
+
+    <view class="upSpace">
+    </view>
+
+    <view class="itemHelp fl">
+        <!--<view class="itemHelpLeft fl">
+            <text class="fl helpName">联系方式</text>
+        </view>-->
+        <!--<view class="itemHelpRight fl">
+            <text class="fl helpDetail">{{phone}}</text>
+        </view>-->
+    </view>
+    <view class="itemHelp fl">
+        <view class="itemHelpLeft fl">
+            <text class="fl helpName">详细地址</text>
+        </view>
+        <view class="itemHelpRight fl">
+            <text class="fl helpDetail">{{location}}</text>
+        </view>
+    </view>
+    <view class="publish-button-container">    
+    <button class="publish-button" bindtap="helpClick">立即帮助</button>
+    </view>
+
+</view>

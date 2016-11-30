@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/helpList/helpList",
+    "pages/helpInput/helpInput",
+    "pages/previewphoto/previewphoto",
+    "pages/helpDetail/helpDetail",
+    "pages/myPage/myPage",
+    "pages/helpConfirmed/helpConfirmed",
+    "pages/myGetHelp/myGetHelp",
+    "pages/myToHelp/myToHelp"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#313131",
+    "navigationBarTitleText": "乐助",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#ffffff",
+    "selectedColor": "#e8ae26",
+    "backgroundColor": "#313131",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/helpList/helpList",
+      "iconPath": "images/tabIcon/toHelp1.png",
+      "selectedIconPath": "images/tabIcon/toHelp.png",
+      "text": "去帮助"
+    }, {
+      "pagePath": "pages/helpInput/helpInput",
+      "iconPath": "images/tabIcon/getHelp1.png",
+      "selectedIconPath": "images/tabIcon/getHelp.png",
+      "text": "求帮助"
+    },
+    {
+      "pagePath": "pages/myPage/myPage",
+      "iconPath": "images/tabIcon/me1.png",
+      "selectedIconPath": "images/tabIcon/me.png",
+      "text": "我的"
+    }]
+  },
+  "debug": true
+}

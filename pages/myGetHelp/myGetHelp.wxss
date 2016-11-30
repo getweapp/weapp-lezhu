@@ -1,0 +1,96 @@
+page{
+    background-color:#D6D6D6;
+}
+
+.container{
+    background-color:#D6D6D6;
+    height:100%;
+    border-top: 1px solid #d4d4d4;
+}
+
+.fl{
+    float:left;
+}
+
+.fr{
+    float:right;
+}
+
+.description{
+    width:92%;
+    border-bottom: 0px;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-bottom:30px;
+}
+
+.num{
+    background-color:#C2B7B7;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+    border-radius:18px;
+}
+
+.desDetail{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    color:#ACACAA;
+}
+
+.itemStatus{
+    width:100%;
+    padding-top:8px;
+    border-top: 1px solid #d4d4d4;
+    background: #fff;
+
+}
+
+.statusTitle{
+    margin-top: 8px;
+}
+
+.cost{
+    color:#e8ae26;
+}
+
+.statusDetail{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    color:#ACACAA
+}
+
+.button-wrapper{
+    padding-top:8px;
+    text-align: center;
+}
+
+.buttonLeft{
+    background-color: #e8ae26;
+}
+
+.buttonRight{
+    background-color: #e8ae26;
+    margin-left: 2rem;
+}
+
+.upSpace{
+    height: 18px;
+    font-size: 12px;
+    color: #666;
+}
+
+.hint{
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: white;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+}

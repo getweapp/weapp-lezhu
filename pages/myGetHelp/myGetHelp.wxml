@@ -1,0 +1,46 @@
+<view class="container">
+    <view class="description" wx:for="{{getHelpArray}}" wx:for-index="idx" wx:for-item="itemName" wx:key="itemName.id">
+        <view class="num">
+            <text>我的求助{{idx+1}}</text>
+        </view>
+        <view>
+            <text>{{itemName.srvTtitle}}</text>
+            <text class="cost fr">悬赏积分：{{itemName.srvCost}}</text>
+        </view>
+         <view class="desDetail">
+            <text>{{itemName.srvDesc}}</text>
+        </view>
+        <view class="itemStatus">
+            <text>求助状态:</text>
+            <view wx:if="{{itemName.processInfo == 0}}" class="statusDetail">求助信息已发布，暂时没人来帮忙。</view>
+            <view wx:elif="{{itemName.processInfo == 1}}" class="statusDetail">
+                <view>{{itemName.helperId}}想要帮助您，Ta将通过电话与您取得联系。请确认要Ta帮您。</view>
+                <view>确认后，只有当Ta完成帮助，并得到您的确认后，对方才能收到您悬赏的{{itemName.srvCost}}积分。</view>
+                <view class="button-wrapper">
+                    <button size="mini" bindtap="letHelpYes" id="{{idx}}-yes" class="buttonLeft">
+                        确认要Ta帮忙
+                    </button>
+                    <button size="mini" bindtap="letHelpNo" id="{{idx}}-no" class="buttonRight">
+                        不要Ta帮忙
+                    </button>
+                </view>
+            </view>
+            <view wx:elif="{{itemName.processInfo == 2}}" class="statusDetail">
+                <view>{{itemName.helperId}}正在帮助您。</view>
+                <view>确认后，您悬赏的{{itemName.srvCost}}积分将扣除。只有当Ta完成帮助，并得到您的确认后，对方才能收到您的悬赏积分。</view>
+                <view class="button-wrapper">
+                    <button class="buttonLeft" size="mini" bindtap="confirmFinish" id="{{idx}}">
+                        Ta已经帮我，给Ta积分！
+                    </button>
+                </view>
+            </view>
+            <view wx:elif="{{itemName.processInfo == 3}}" class="statusDetail">您的求助已完成。</view>
+        </view>
+    </view>
+
+    <view class="hint" hidden="{{hintFlag}}">
+        您没有求助过！
+    </view>
+
+
+</view>

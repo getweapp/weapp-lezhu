@@ -1,0 +1,36 @@
+<view class="container">
+    <view class="item">
+        <view class="itemLeft fl">
+            <image src="{{wechatUserInfo.avatarUrl}}" class="personImg fl"></image>
+            <text class="fl personName">{{wechatUserInfo.nickName}}</text>
+
+        </view>
+        <view class="itemRight fr">
+            <text class="fr">我的积分:{{userInfo.usePoint}}</text>
+        </view>
+    </view>
+
+    <view class="upSpace">
+    </view>
+
+    <view class="itemHelp" bindtap="myToHelpPage">
+        <view class="itemHelpLeft fl">
+            <image src="../../images/me/myToHelp.png" class="helpImg fl"></image>
+            <text class="fl helpName">我帮助的</text>
+        </view>
+        <view class="itemHelpRight fr">
+           <image src="../../images/me/arrow.png" class="arrowImg fr"></image>
+        </view>
+    </view>
+
+    <view class="itemHelp" bindtap="myGetHelpPage">
+        <view class="itemHelpLeft fl">
+            <image src="../../images/me/myGetHelp.png" class="helpImg fl"></image>
+            <text class="fl helpName">我求助的</text>
+        </view>
+        <view class="itemHelpRight fr">
+           <image src="../../images/me/arrow.png" class="arrowImg fr"></image>
+        </view>
+    </view>
+
+</view>

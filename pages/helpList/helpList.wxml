@@ -1,0 +1,47 @@
+<view id="0" class="helplist-container">
+<view class="helplist-top-type">
+        <picker class="helplist-top-type-picker" bindchange="bindPickerChange" value="{{index}}" range="{{typearray}}" >
+                <view name="helptype" class="picker">
+                        {{typedata}}
+            <image class="publish-type-arrow" mode="aspectFill" src="../../images/arrow1.png" />
+
+                </view>
+
+        </picker>
+    </view>
+
+<block wx:for="{{array}}" wx:for-item="item" wx:key="item.id">
+  <view class="help-list" bindtap="openMap" data-longitude="{{item.longitude}}" data-latitude="{{item.latitude}}" data-iconpath="{{item.picUrl}}"
+  data-nickname="{{item.userId}}" data-headicon="{{item.userUrl}}" data-payscore="{{item.srvCost}}" data-title="{{item.srvTitle}}" 
+  data-content="{{item.srvDesc}}"  data-location="{{item.posDes}}" data-taskId="{{item.taskId}}">
+   <view class="help-list-top">
+        <view class="help-list-top-left">
+            <image class="headIcon" src="https://wechatapp.zhhhorizon.net/intl-console-web/pic/{{item.userId}}.JPG"></image>
+            <text class="userName">{{item.userId}}</text>
+        </view>
+        <view class="help-list-top-right">
+         <text>悬赏：{{item.srvCost}}积分</text>   
+        </view>
+   </view> 
+
+   <view class='help-list-bottomImg-container'>
+   <image class="help-list-bottomImg" src="../../images/bg01.jpg"></image>
+   </view> 
+   
+    <view class="help-list-bottom">
+    <view class="help-list-bottom-left">
+            <text>{{item.srvTitle}}</text>
+    </view>
+    <view class="help-list-bottom-right">
+            <text>{{item.srvDistance}}  m</text>
+    </view>
+    </view> 
+  </view>
+</block>
+
+<view class="hint" hidden="{{hintFlag}}">
+        <image src="../../images/nobody.png"></image>
+</view>
+
+</view>
+
