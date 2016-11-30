@@ -198,7 +198,8 @@ Page({
                 "dataType":"json"
             },
             success: function(res) {
-                if (res.data.respCode){
+                console.log('data:::::',res.data)
+                if (res.data){
                     if(res.data.respCode==0){
                         wx.showModal({
                             title: '提示',
